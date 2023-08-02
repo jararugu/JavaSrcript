@@ -1,0 +1,198 @@
+java Script:
+
+history of JS:
+--> there was a company called Netscape,who has a own 
+--> to provide the,which was run on thier browser's
+--> Netscape company hired a developer called as  brenden Eich,where brenden eich invented a scripting language called as moka with in 10 days.
+-->later on mocha rename as live script,and for the marketing perpose lie script renamed as java script.
+-->JS was invented inthe year 1995,
+-->Netscape company handovered ,JS to Ecma company(european computer manufacturer association).
+-->where ecma company released ES-1 in the year 1997,every year ecam company releases new version of ecma script.
+
+why JS:
+--> Instead of providing a functionalities for the wedpage using server side logic,we can provide functionalities for 
+   the webpage,which will provides functionalities and executes results on the webpage itself.
+
+what is JS:
+--> JS is  a scripting language, 
+Reason -->bcz the JS code is red analysed and then executed
+        --> its client server side Scrpting language,bcz The JS file is in Server side and functionalities is perform on the client's side.
+it is called weakly type :  we dont a declare a date type to intialize to a variale,and semicolon is not mandatory 
+--> its is dynamic Scripting language,bcz in JS variable can reintialized with different datatype,and we can declare a function and we can call the function,wherever we want dynamically.
+--> Bieng Developer ,which means DRY principle(dont repeat yourself).
+--> JS is  synchronous scripting language ,because JS code executed line by line from top to bottom and left to right.
+
+NOte:
+
+--> JS is  synchronous ,we can make it asynchronous
+--> JS is single threaded ,becuase in JS  we have ,only one call stack
+--> JS interpreted scripting language 
+--> JS is Casesensitive language.
+
+JS engines:
+google-chromo: v8
+mocrosoft-chakra
+firefox-spider monkey
+
+--> 
+how JS Engine works:
+--> JS file is connected to HTML ,and HTML is runed on the browser,when HZTML file is runed on the BRowser,browser gived JD code to JS Engine
+--> in JS Engine ,JIT compiler check the syntax and converts into to machine level languagu
+--> then interpretr ,which checks the code line by line,if the line is correct,if execute the code.
+--> if the second line is correct,its executed,
+i-->f Incase any error ,if one of the lines,interpreter throgh an error.
+--> if theree is a suntax error ,JIT compiler does not convert code to MLL
+-->JS is an interpretr language,not an compile language.
+--> The source code is passed through a program callled a compiler,which translates it into bytecodethat the machine 
+     understand language,and can execute.
+--> in constast JS has no compliation STep,insted an interpreter in the browser.
+--> browser reads over the JS code,interpreter each line,and runs it.
+--> more modern browsers use a technology known as JIT(JUST IN TIME)  
+--> which compiles JS to executable just as it is about to run.
+
+
+Tokens:
+--> Tokens are smalllest unit of any programming language.
+
+ In  JS have a keywords:
+
+--> keywords are  predifined words
+-->key words are Reserved words
+--> it should be in Lowercase  
+            example: for,this,var,while,const  
+--> keywords are not used to identifiers.
+--> keywords are not used to identifiers. we can use (_ and $)
+
+
+
+identifiers in JS:
+--> can not decalred ass identifiers.
+--> speacial characters can not be use other then _ and $
+--> keywords are not used to identifiers.
+--> we can use (_ and $)
+--> should not start with number but it can have a number in the identifier.
+--> Eample : var_emp_name = "guru"
+
+
+literals in JS:
+--> the data type,that are intialized to  variable are below:
+--> number
+-->null
+--> Boolean
+-->bigint
+-->undefined
+--> String
+--> Simple
+-->Object
+
+
+
+
+01/08/2023
+
+var:
+--> var belongs to globel scope
+--> belongs to function scope
+--> we can reintialize and redeclare with var
+--> var varible can be accessed with window object  
+ ex: var a = 10; console.log();
+ --> hosting can possible with var 
+ ex: console.log(a)  // undefined  
+ --> TDZ cannot br achieved with var
+
+
+
+
+let:
+-->  let belongs to script scope
+-->  let belongs to  block scope
+--> reintialize is possible redeclare is not possible
+--> can not be accessed with window objet 
+ ex :let a = 10; console.log()
+--> hosting can possible with let
+ex:  console.log(a)   // uncaught reference error let a = 10;
+--> TDZ can be achieved with let
+
+
+
+
+
+const:
+-->const belongs to script scope
+-->const  belongs to block scope
+--> only declaration and intialization is possible
+--> can not be accessed with window objet
+ ex :const a = 10; console.log()
+ --->hosting can not be done with possible with const
+ex:  console.log(a)   // uncaught reference error const a = 10;
+--> TDZ can be achieved with const
+
+
+
+NOTE:
+-->
+globel and script:-->
+
+var a = 10;
+let  b = 20;
+const c = 30;
+functon demo{
+        console.log(a)
+        console.log(b)
+        console.log(c)
+}
+
+
+
+local  scope: -->
+-------------
+
+function demo{
+var a = 10;
+let  b = 20;
+const c = 30;
+
+}
+demo();
+console.log(a)
+ console.log(b)
+console.log(c)
+
+
+
+local scope: -->
+------------
+
+{
+ var a = 10;
+let  b = 20;
+const c = 30;
+
+}
+console.log(a)
+ console.log(b)
+console.log(c)
+
+
+-------------------
+var a = 10;
+let  b = 20;
+const c = 30;
+{
+ console.log(a) // 10
+ console.log(b) // 20
+ console.log(c) // 30
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

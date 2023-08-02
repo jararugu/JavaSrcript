@@ -1,0 +1,8 @@
+operators:
+ are special symbols.which will perform a specific operations on the operands.
+
+1. airthmetic operators --> +,-,*,%,/,++,--
+2. assignment operators -->=,+=,/=,%+
+3. Relational Operator--> >,<,>=,<=,===,==,!=,!==
+4. Logical operator--> AND, OR ,NOT
+5. ternary Operator -->(condition) ? statement 1 : statement 2

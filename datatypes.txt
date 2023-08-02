@@ -1,0 +1,33 @@
+TypeCasting:
+-> is a converting from one datatype to another datatype is called typecasting.
+-> there are two type of typecasting
+1. Implicit
+-> converting from onr datattype to another datatype internally is called implicit typecasting
+2. explicit:
+-> converting from onr datattype to another datatype Externally using some of methods is callled Explicit typecasting
+
+
+datatypes:
+
+ there are to types in JS
+
+primitive datatypes:
+are object dereferencing and immutable
+-> Number
+-> BigInt
+->Null
+-> Undefined
+->String
+->Boolean
+
+Non -primitive datatypes:
+are object referencing and its mutable
+-> Arrays
+-> Functions
+-> Objects
+
+Mutable:
+-> means whenver the value is updated the updated value will be altered in the same memory space or same object address.
+immutable:
+-> means whenever the value is updated instead of altering the value in the same memory space.
+->it will craete a new memory space for update value
